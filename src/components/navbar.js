@@ -24,7 +24,6 @@ var Navbar = () =>{
   </div>
 </nav>
 
-<Outlet />
 </>
   )
 };
