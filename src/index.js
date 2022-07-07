@@ -4,23 +4,15 @@ import reportWebVitals from './reportWebVitals';
 import Navbar from './components/navbar';
 import Keypad from './components/keypad';
 import About from './components/about';
-import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
-  <BrowserRouter>
   <React.StrictMode>
     
-    
-    <Routes>
-        <Route path="/" element={<Navbar />}>
-        <Route index element={<Keypad />} />
-        <Route path="/about" element={<About />}/>
-        </Route>
-      </Routes>
+        <Navbar />
+        <Keypad />  
     
   </React.StrictMode>
-  </BrowserRouter>
 );
 
 // If you want to start measuring performance in your app, pass a function
